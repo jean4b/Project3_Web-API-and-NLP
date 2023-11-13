@@ -15,15 +15,15 @@ The objective is to build the most optimal text classification model between Dis
 - Modeling:
   1. CountVectorizer+Logistic Regression
   2. CountVectorizer+Logistic Regression(bootstrapped data)
-  3. CountVectorizer+Random Forest Classifier: Obtain the best score and the least percentage of incorrect prediction
-  4. TfidfVectorizer+Random Forest Classifier
+  3. CountVectorizer+Random Forest Classifier
+  4. TfidfVectorizer+Random Forest Classifier: Obtain the best score and the least percentage of incorrect prediction
   5. CountVectorizer+Multinomial Naive Bayes
   6. TfidfVectorizer+Multinomial Naive Bayes
 - Modeling Evaluation: Consider both Recall and Precision scores because both the prediction of both subreddits are important. F1 score is also considered
-- Final Model: CountVectorizer+Random Forest Classifier is the chosen model because of the best score obtained and acquired the least amount of incorrect prediction
+- Final Model: TFidfVectorizer+Random Forest Classifier is the chosen model because of the best score obtained and acquired the least amount of incorrect prediction
 
 ## Recommendation
-- The classification model will utilized CountVectorizer+Random Forest Classifier
+- The classification model will utilized TFidfVectorizer+Random Forest Classifier
 - Disneyland is more popular because obtained more post and more votes
 - Promotional tactics will be targeted toward Disneyland ticket sales because popularity means higher demand
 

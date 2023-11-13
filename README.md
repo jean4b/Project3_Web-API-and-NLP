@@ -19,6 +19,16 @@ The objective is to build the most optimal text classification model between Dis
   4. TfidfVectorizer+Random Forest Classifier: Obtain the best score and the least percentage of incorrect prediction
   5. CountVectorizer+Multinomial Naive Bayes
   6. TfidfVectorizer+Multinomial Naive Bayes
+
+Model Metrics Table:
+|                                                   | Accuracy | Precision                        | Recall                           | F1                               | % Incorrect Prediction |
+|---------------------------------------------------|----------|----------------------------------|----------------------------------|----------------------------------|------------------------|
+| CountVectorizer+Logistic Regression(Original)     | 0.91     | Universal: 0.98 Disneyland: 0.91 | Universal: 0.75 Disneyland: 0.97 | Universal: 0.82 Disneyland: 0.94 | 6.75%                  |
+| CountVectorizer+Logistic Regression(Bootstrapped) | 0.94     | Universal: 0.94 Disneyland: 0.94 | Universal: 0.93 Disneyland: 0.95 | Universal: 0.93 Disneyland: 0.94 | 6.13%                  |
+| CountVectorizer + RandomForestClassifier          | 0.95     | Universal: 0.95 Disneyland: 0.94 | Universal: 0.93 Disneyland: 0.96 | Universal: 0.94 Disneyland: 0.95 | 5.13%                  |
+| TfidfVectorizer + RandomForestClassifier          | 0.95     | Universal: 0.96 Disneyland: 0.94 | Universal: 0.93 Disneyland: 0.97 | Universal: 0.94 Disneyland: 0.95 | 4.45%                  |
+| CountVectorizer + MultinomialNB                   | 0.92     | Universal:0.91 Disneyland:0.93   | Universal:0.92 Disneyland:0.92   | Universal:0.91 Disneyland:0.92   | 5.15%                  |
+| TfidfVectorizer + MultinomialNB                   | 0.92     | Universal:0.91 Disneyland:0.93   | Universal:0.92 Disneyland:0.92   | Universal:0.92 Disneyland:0.93   | 6.96%                  |
 - Modeling Evaluation: Consider both Recall and Precision scores because both the prediction of both subreddits are important. F1 score is also considered
 - Final Model: TFidfVectorizer+Random Forest Classifier is the chosen model because of the best score obtained and acquired the least amount of incorrect prediction
 
